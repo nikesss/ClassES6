@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Классы</title>
+</head>
+
+<body>
+    <section class="container center">
+        <button id="create_new_node">Создать</button>
+        <div id="list">
+            <ul class="head_title">
+                <li>Название</li>
+                <li>Процессор</li>
+                <li>Кол-во ОЗУ</li>
+                <li>Кол-во ядер</li>
+                <li>Действие</li>
+            </ul>
+        </div>
+        <form id='main_form' name="mainForm" action="">
+            <select name="device" id="list_device">
+                <option value="default" selected disabled id='default_option'>Выберите устройство</option>
+                <option value="ultra">Ультрабук</option>
+                <option value="server">Cервер</option>
+            </select>
+            <div id="form_body">
+                <input type="button" value="Сохранить" id="save_node">
+                <input type="button" value="Отчистить" id="clear_node">
+                <input type="button" value="Закрыть" id="close_node">
+            </div>
+        </form>
+    </section>
+    <script src="./script/classes.js"></script>
+    <script src="./script/addNode.js"></script>
+    <script src="./script/form.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
